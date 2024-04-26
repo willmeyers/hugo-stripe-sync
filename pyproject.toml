@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hugo-stripe-sync"
+version = "0.1.0"
+description = ""
+authors = ["Will Meyers <will@willmeyers.net>"]
+readme = "README.md"
+packages = [{include = "hugo_stripe_sync"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+stripe = "^9.4.0"
+fastapi = "^0.110.2"
+uvicorn = "^0.29.0"
+gitpython = "^3.1.43"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
